@@ -1,0 +1,87 @@
+b {
+  font-weight: 500;
+}
+
+h1, h4, h3 {
+  color: #979696;
+  font-family: 'Halant', serif;
+}
+
+.hello {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 2.0em;
+}
+
+.scroll-on {
+  margin-top: 25px;
+}
+
+#arrow-down {
+  color: #aaaaaa;
+}
+
+.fp-controlArrow {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(120,120,120, 0.2);
+}
+
+.fp-controlArrow.fp-next {
+  border-width: 0px;
+}
+
+.fp-controlArrow.fp-prev {
+  border-width: 0px;
+  width: 12px;
+  height: 12px;
+}
+
+.fullbar {
+  width: 100%;
+  z-index: 9999;
+}
+
+.top-bar {
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.10em;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: none;
+}
+
+.top-bar-sec {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu, .top-bar ul {
+  background-color: rgba(0, 0, 0, 0);;
+}
+
+.menu > li > a {
+  padding: 0.15em;
+}
+
+.menu > li:first-child {
+  padding-left: 0px;
+}
+
+.menu > li {
+  padding-left: 15px;
+}
+
+
+@media (max-width: 640px) {
+  .hello {
+    font-size: 2.5em;
+  }
+}
+
+a {
+  color: #828282;
+  font-weight: 500;
+}

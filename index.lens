@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Halant:400,500|Source+Sans+Pro:700,400,200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./style.css">
+  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+  <koken:title />
+
+  <koken:head>
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description strip_html='true' }}" />
+    <meta property="og:type" content="website" />
+    <koken:first>
+      <meta property="og:image" content="{{ content.presets.medium_large.url }}" />
+      <meta property="og:image:width" content="{{ content.presets.medium_large.width }}" />
+      <meta property="og:image:height" content="{{ content.presets.medium_large.height }}" />
+    </koken:first>
+    <meta property="og:url" content="{{ location.site_url }}{{ location.here }}" />
+    <koken:not empty="profile.twitter">
+      <meta name="twitter:card" content="gallery" />
+      <meta name="twitter:site" content="@{{ profile.twitter }}" />
+      <meta name="twitter:creator" content="@{{ profile.twitter }}" />
+      <koken:loop limit="4">
+        <meta name="twitter:image{{ index }}" content="{{ content.presets.medium_large.cropped.url }}">
+      </koken:loop>
+    </koken:not>
+  </koken:head>
+
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <div class="row small-10 columns">
+        <h1 class="hello">Hello there.</h1>
+        <h4>this is <b>tenthousandsnapshots</b>
+          <br> a collection of emotions,
+          <br> thoughts and experiences,
+          <br> captured by <a href="mailto:{{profile.email}}">josephine tan</a>
+        </h4>
+        <h4 class="scroll-on"><a id="arrow-down"><i class="fi-arrow-down"></i></a></h4>
+      </div>
+    </div>
+
+    <div class="section othersec">
+
+      <div class="sticky fullbar">
+        <nav class="top-bar">
+          <div class="top-bar-sec">
+            <ul class="menu">
+              <li><a href="#" class="feat-btn">features</a></li>
+              <li><a href="#" class="album-btn">albums</a></li>
+              <li><a href="#" class="essay-btn">essays</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="slide">
+        <div class="row small-11 medium-10 columns main-cont">
+          <h3>features</h3>
+          <div class="grid">
+            <koken:load>
+              <koken:loop>
+                <div class="grid-item small-6 medium-3">
+                  <koken:img />
+                </div>
+              </koken:loop>
+            </koken:load>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="row small-11 medium-10 columns main-cont">
+          <h3>albums</h3>
+          <div class="grid">
+            <div class="grid-item small-6 medium-4">
+              <img src="http://placehold.it/450x350">
+            </div>
+            <div class="grid-item small-6 medium-4">
+              <img src="http://placehold.it/850x350">
+            </div>
+            <div class="grid-item small-6 medium-4">
+              <img src="http://placehold.it/850x350">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="row small-11 medium-10 columns main-cont">
+          <h3>essays</h3>
+          <div class="grid">
+            <div class="grid-item small-6 medium-4">
+              <img src="http://placehold.it/450x350">
+            </div>
+            <div class="grid-item small-6 medium-4">
+              <img src="http://placehold.it/850x350">
+            </div>
+            <div class="grid-item small-6 medium-4">
+              <img src="http://placehold.it/850x350">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
