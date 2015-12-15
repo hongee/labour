@@ -83,15 +83,13 @@
         <div class="row small-11 medium-10 columns main-cont">
           <h3>albums</h3>
           <div class="grid">
-            <div class="grid-item small-6 medium-4">
-              <img src="http://placehold.it/450x350">
-            </div>
-            <div class="grid-item small-6 medium-4">
-              <img src="http://placehold.it/850x350">
-            </div>
-            <div class="grid-item small-6 medium-4">
-              <img src="http://placehold.it/850x350">
-            </div>
+            <koken:load source="albums">
+              <koken:loop>
+                <div class="grid-item small-6 medium-3">
+                  <koken:img />
+                </div>
+              </koken:loop>
+            </koken:load>
           </div>
         </div>
       </div>
@@ -99,15 +97,13 @@
         <div class="row small-11 medium-10 columns main-cont">
           <h3>essays</h3>
           <div class="grid">
-            <div class="grid-item small-6 medium-4">
-              <img src="http://placehold.it/450x350">
-            </div>
-            <div class="grid-item small-6 medium-4">
-              <img src="http://placehold.it/850x350">
-            </div>
-            <div class="grid-item small-6 medium-4">
-              <img src="http://placehold.it/850x350">
-            </div>
+            <koken:load source="essays">
+              <koken:loop>
+                <div class="grid-item small-6 medium-3">
+                  <koken:img />
+                </div>
+              </koken:loop>
+            </koken:load>
           </div>
         </div>
       </div>
