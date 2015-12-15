@@ -1,5 +1,7 @@
 $(document).foundation();
 $(document).ready(function() {
+  var resizeIsFired = false;
+
   $('#fullpage').fullpage({
     autoScrolling: true,
     fitToSection: false
@@ -28,7 +30,11 @@ $(document).ready(function() {
   });
 
   $(window).on('k-resize', function() {
-    console.log('k-resize event has fired!')
+    if(!resizeIsFired) {
+      $.fn.fullpage.reBuild();
+      resizeIsFired = true;
+      setTimeout(function(){ resizeIsFired = false }, 600);
+    }
   });
 
 
