@@ -21,11 +21,15 @@ $(document).ready(function() {
     $.fn.fullpage.moveTo(2,2);
   })
 
-
   $('.grid').masonry({
     itemSelector: '.grid-item',
     percentPosition: true,
     columnWidth: '.grid-item'
   });
+
+  $(window).on('k-resize', function() {
+    console.log('k-resize event has fired!')
+  });
+
 
 });
