@@ -31,9 +31,12 @@ $(document).ready(function() {
 
   $(window).on('k-resize', function() {
     if(!resizeIsFired) {
-      $.fn.fullpage.reBuild();
       resizeIsFired = true;
-      setTimeout(function(){ resizeIsFired = false }, 600);
+      setTimeout(function(){
+        console.log("called rebuild");
+        $.fn.fullpage.reBuild();
+        resizeIsFired = false
+      }, 600);
     }
   });
 
