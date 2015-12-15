@@ -99,7 +99,7 @@
           <div class="grid">
             <koken:load source="essays">
               <koken:loop>
-                <div class="grid-item small-6 medium-3">
+                <div class="small-6 medium-3 grid-item">
                   <koken:img />
                 </div>
               </koken:loop>
@@ -110,7 +110,6 @@
 
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
