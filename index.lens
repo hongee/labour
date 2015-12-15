@@ -9,6 +9,9 @@
   <link href='https://fonts.googleapis.com/css?family=Halant:400,500|Source+Sans+Pro:700,400,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./style.css">
   <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+  <koken:asset file="style.css"/>
+
+
   <koken:title />
 
   <koken:head>
@@ -116,6 +119,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
   <script src="./index.js"></script>
+  <koken:asset file="./index.js"/>
 </body>
 
 </html>
